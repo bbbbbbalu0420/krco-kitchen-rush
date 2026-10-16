@@ -14,6 +14,13 @@
 
 All images are unedited captures from the real game (Mac development build, portrait 9:16). No concept art, no AI-generated mock-ups.
 
+<p align="center">
+  <img src="screenshots/06-district-staging.png" width="32%" alt="Actual staging district">
+  <img src="screenshots/07-restaurant-walk-staging.png" width="32%" alt="Walking in a read-only staging restaurant">
+</p>
+
+The first five images are earlier development captures. The district/interior images are unedited native Mac build 50 captures from 16 October 2026, using disposable staging accounts. They demonstrate visits and walking; they do not demonstrate a public hosted world.
+
 ---
 
 ## English
@@ -39,8 +46,8 @@ Run a small restaurant kitchen against the clock: pick up real ingredients, chop
 | Trusted rewards | The dedicated server verifies each player's Unity Authentication token (JWKS), then signs a per-account result statement (RSA-2048). The player's own account redeems it through Cloud Code, which pins the server key, recomputes coins/points under a fixed policy and stores the once-receipt in the same compare-and-set write as the credit — replays, retries and two devices never pay twice. |
 | Weekly co-op ranking | Server-written leaderboard projection with weekly UTC reset; players cannot write scores directly (project access policy). Reads expose rank and score only. |
 | Accounts & privacy | Anonymous/linked accounts, session token in the Keychain, account deletion with cross-bucket cleanup, opt-in public profile, RU/EN privacy policy drafts. |
-| Operations | Private Ops console (MFA, roles, CSRF, audit log, encrypted backup/restore) with live server health and cost estimates; signed cloud moderation actions are being integrated. |
-| QA | ~3,400 automated EditMode/PlayMode tests and a QA autopilot that plays all 60 + 20 authored shifts; scripted Mac/Linux multiplayer end-to-end runs. |
+| Operations | Private Ops console (MFA, roles, CSRF, audit log, encrypted backup/restore) with live local server health and clearly labelled estimates; signed cloud moderation verified on staging; provider billing and external notifications are not connected. |
+| QA | 3,435 passing source tests, including the QA Autopilot model matrix for all 60 + 20 authored shifts; separate native and physical movement checks; scripted Mac/Linux multiplayer end-to-end runs. |
 
 ### Tech stack
 
@@ -53,11 +60,15 @@ Unity 6.3 LTS (URP, C#) · Netcode for GameObjects · Unity Gaming Services (Aut
 | Single player: career, challenges, free play | Implemented, automated QA green |
 | Co-op 2/4 on a dedicated server, leave/rejoin | Verified locally (Mac + Linux VM) |
 | Server crash recovery | Implemented, verified with real `SIGKILL` |
-| Trusted co-op rewards & weekly ranking | Implemented, staging verification in progress |
-| Social district | Verified on staging with two accounts |
+| Trusted co-op rewards & weekly ranking | Verified with two staging accounts, concurrent replay and native restart |
+| Social district | Staging privacy/visits/walking verified; dedicated invitation flow remains incomplete |
 | Public servers, TestFlight, App Store | **Not released** — pending hosting, legal and store decisions |
 
-This repository is a **public showcase** (description, screenshots, architecture notes). The game source code and assets are kept in a private repository.
+The district and read-only 3D restaurant visits work on staging. A friend invitation that moves both players directly into a dedicated shift still needs the production allocator and client integration. Public gameplay is unavailable.
+
+[Features](docs/FEATURES.md) · [Roadmap](docs/ROADMAP.md) · [Privacy status](docs/PRIVACY_STATUS.md) · [Security reports](SECURITY.md)
+
+This repository is a **public showcase** (description, screenshots, architecture notes). The game source code and assets remain private.
 
 ---
 
@@ -82,14 +93,16 @@ This repository is a **public showcase** (description, screenshots, architecture
 - **Защищённые награды**: сервер проверяет токен Unity Authentication каждого игрока и подписывает результат (RSA-2048); облако пересчитывает монеты и очки по фиксированным правилам и записывает квитанцию в той же атомарной записи, что и начисление — повторы, сбои и два устройства не дают двойной награды.
 - **Недельный рейтинг кооператива** пишет только сервер; клиенты видят только место и очки.
 - **Аккаунты и приватность**: Keychain, удаление аккаунта, публичный профиль только по согласию.
-- **Ops-консоль** с MFA, ролями, журналом аудита, шифрованным бэкапом; подписанная облачная модерация подключается.
-- **QA**: около 3 400 автоматических тестов и автопилот, проходящий все 60 + 20 смен.
+- **Ops-консоль** с MFA, ролями, журналом аудита, шифрованным бэкапом; подписанная облачная модерация проверена на staging; счета провайдеров и внешние уведомления не подключены.
+- **QA**: 3 435 успешных тестов исходников, включая модельную матрицу автопилота для всех 60 + 20 смен; реальные Player-проверки выполняются отдельно.
 
 ### Статус (октябрь 2026)
 
-Игра в разработке. Одиночная игра и кооператив проверены локально, восстановление после падения сервера реализовано и проверено, защищённые награды проходят проверку на staging. Публичные серверы, TestFlight и App Store **ещё не запущены**.
+Игра в разработке. Одиночная игра и кооператив проверены локально, восстановление после падения сервера реализовано и проверено, защищённые награды проверены на двух staging-аккаунтах с параллельными повторами и перезапуском клиента. Публичные серверы, TestFlight и App Store **ещё не запущены**.
 
-Этот репозиторий — **публичная витрина** (описание, скриншоты, архитектура). Исходный код и ассеты игры хранятся в закрытом репозитории.
+Карта района и гостевая 3D-прогулка проверены на staging. Прямой переход по приглашению в совместную dedicated-смену требует подключения allocator и игрового интерфейса. Публичные игровые серверы недоступны.
+
+Этот репозиторий — **публичная витрина** (описание, скриншоты, архитектура). Исходный код и ассеты игры остаются закрытыми.
 
 ---
 
