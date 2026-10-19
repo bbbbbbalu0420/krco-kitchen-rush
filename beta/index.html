@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitchen Rush — бета-тест</title>
+<style>
+:root{--bg:#fffaf3;--fg:#2b2622;--muted:#6b6058;--card:#ffffff;--accent:#c4512b;--btn:#1f4e57;--btnfg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1a17;--fg:#f1ebe4;--muted:#b8ada3;--card:#2a2622;--accent:#f08a5d;--btn:#2f7280;--btnfg:#fff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 40px}
+h1{margin:.2em 0 .1em;font-size:1.7em}h2{font-size:1.15em;margin:1.4em 0 .4em}
+.lead{color:var(--muted);margin:0 0 1em}
+.warn{background:var(--card);border-left:4px solid var(--accent);padding:12px 14px;border-radius:8px}
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps li{background:var(--card);border-radius:12px;padding:14px;margin:10px 0;counter-increment:s}
+ol.steps li::before{content:counter(s);display:inline-block;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:8px}
+a.btn{display:block;margin-top:10px;background:var(--btn);color:var(--btnfg);text-decoration:none;text-align:center;padding:12px;border-radius:10px;font-weight:600}
+code{word-break:break-all;font-size:.85em;color:var(--muted)}
+a{color:var(--accent)}ul{padding-left:1.2em}hr{border:0;border-top:1px solid var(--muted);opacity:.3;margin:28px 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Kitchen Rush 🍳</h1>
+<p class="lead">Бесплатная закрытая бета Android-игры: готовь, подавай гостям, мой посуду, обустраивай ресторан. Покупок и рекламы нет.</p>
+
+<div class="warn"><b>Важно:</b> открывайте ссылки в <b>Chrome</b>, а не во встроенном браузере ВКонтакте/Telegram/Instagram — там нет входа в Google и ссылки пишут «нет доступа» или «не найдено». В ВК: <b>⋮ → «Открыть в браузере»</b>. Везде используйте <b>тот же Google-аккаунт, что в Play Маркете</b> на телефоне.</div>
+
+<h2>3 шага (на Android-телефоне)</h2>
+<ol class="steps">
+<li><b>Вступите в группу тестировщиков.</b> Если видите «Войти» — войдите в Google, затем снова откройте эту ссылку и нажмите «Присоединиться к группе».
+<a class="btn" href="https://groups.google.com/g/kitchen-rush-testers">Открыть группу</a><code>https://groups.google.com/g/kitchen-rush-testers</code></li>
+<li><b>Станьте тестировщиком.</b> Нажмите «Стать тестировщиком» (Become a tester) и дождитесь надписи «Вы тестировщик».
+<a class="btn" href="https://play.google.com/apps/testing/com.driveoil.kitchenrush">Стать тестировщиком</a><code>https://play.google.com/apps/testing/com.driveoil.kitchenrush</code></li>
+<li><b>Установите игру из Play Маркета.</b> Страница откроется только после шага 2 (иногда через несколько минут). Разработчик в Play — «Drive Oil».
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush">Установить Kitchen Rush</a><code>https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush</code></li>
+</ol>
+<p>Пожалуйста, не выходите из теста <b>14 дней</b> и иногда заходите в игру — так Google разрешает выпуск игры. Нужен Android 7.1+ (64-бит). Текст в игре пока на русском.</p>
+
+<h2>Если не получается</h2>
+<ul>
+<li><b>«Нет доступа» / только кнопка «Войти»</b> — вы не вошли в Google в этом браузере. Откройте в Chrome и войдите.</li>
+<li><b>Ссылка 2 «не грузит»</b> — откройте её в Chrome, а не в ВК; проверьте, что выбран нужный аккаунт (значок справа вверху).</li>
+<li><b>«Страница не найдена» на шаге 3</b> — сначала выполните шаги 1 и 2 тем же аккаунтом, подождите 5–15 минут и обновите.</li>
+<li>Не помогло — напишите: <a href="mailto:marinakalinina0011@gmail.com">marinakalinina0011@gmail.com</a> (скриншот + модель телефона). Пароли и коды не присылайте.</li>
+</ul>
+
+<hr>
+<h2 lang="en">English</h2>
+<p lang="en">Free Android closed beta. Open the links in <b>Chrome</b> (not inside VK/Telegram/Instagram), signed in with the <b>same Google account as your Play Store</b>: 1) join the group and tap “Join group”, 2) tap “Become a tester”, 3) install from Google Play (works only after step 2, sometimes after a few minutes). Please stay opted in for 14 days. Android 7.1+ (64-bit); in-game text is Russian for now. No purchases, no ads.</p>
+<p><a href="../">Kitchen Rush</a> · <a href="../privacy/">Privacy</a></p>
+</main>
+</body>
+</html>
