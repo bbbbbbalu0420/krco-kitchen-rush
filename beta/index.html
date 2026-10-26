@@ -1,63 +1,147 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kitchen Rush — бета-тест</title>
-<link rel="icon" type="image/png" sizes="1024x1024" href="../assets/kitchen-rush-logo.png">
-<meta property="og:image" content="https://bbbbbbalu0420.github.io/krco-kitchen-rush/assets/kitchen-rush-logo.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<style>
-.brand-logo{display:block;width:160px;max-width:48vw;height:auto;margin:0 0 18px;border-radius:24px;box-shadow:0 10px 30px #5c260b26}
-
-:root{--bg:#fffaf3;--fg:#2b2622;--muted:#6b6058;--card:#ffffff;--accent:#c4512b;--btn:#1f4e57;--btnfg:#fff}
-@media (prefers-color-scheme:dark){:root{--bg:#1d1a17;--fg:#f1ebe4;--muted:#b8ada3;--card:#2a2622;--accent:#f08a5d;--btn:#2f7280;--btnfg:#fff}}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:640px;margin:0 auto;padding:20px 16px 40px}
-h1{margin:.2em 0 .1em;font-size:1.7em}h2{font-size:1.15em;margin:1.4em 0 .4em}
-.lead{color:var(--muted);margin:0 0 1em}
-.warn{background:var(--card);border-left:4px solid var(--accent);padding:12px 14px;border-radius:8px}
-ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
-ol.steps li{background:var(--card);border-radius:12px;padding:14px;margin:10px 0;counter-increment:s}
-ol.steps li::before{content:counter(s);display:inline-block;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;line-height:28px;font-weight:700;margin-right:8px}
-a.btn{display:block;margin-top:10px;background:var(--btn);color:var(--btnfg);text-decoration:none;text-align:center;padding:12px;border-radius:10px;font-weight:600}
-code{word-break:break-all;font-size:.85em;color:var(--muted)}
-a{color:var(--accent)}ul{padding-left:1.2em}hr{border:0;border-top:1px solid var(--muted);opacity:.3;margin:28px 0}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e35">
+  <meta name="description" content="Join the Kitchen Rush Android test. Clear English and Russian setup, first-shift help and community links.">
+  <title>Kitchen Rush</title>
+  <link rel="canonical" href="https://bbbbbbalu0420.github.io/krco-kitchen-rush/beta/">
+  <link rel="icon" type="image/png" sizes="1024x1024" href="./kitchen-rush-logo.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./campaign.js" defer></script>
+  <script src="./onboarding.js" defer></script>
 </head>
 <body>
-<main>
-<img class="brand-logo" src="../assets/kitchen-rush-logo.png" alt="Kitchen Rush" width="160" height="160" decoding="async">
-
-<h1>Kitchen Rush 🍳</h1>
-<p class="lead">Бесплатная закрытая бета Android-игры: готовь, подавай гостям, мой посуду, обустраивай ресторан. Покупок и рекламы нет.</p>
-
-<div class="warn"><b>Важно:</b> открывайте ссылки в <b>Chrome</b>, а не во встроенном браузере ВКонтакте/Telegram/Instagram — там нет входа в Google и ссылки пишут «нет доступа» или «не найдено». В ВК: <b>⋮ → «Открыть в браузере»</b>. Везде используйте <b>тот же Google-аккаунт, что в Play Маркете</b> на телефоне.</div>
-
-<h2>3 шага (на Android-телефоне)</h2>
-<ol class="steps">
-<li><b>Вступите в группу тестировщиков.</b> Если видите «Войти» — войдите в Google, затем снова откройте эту ссылку и нажмите «Присоединиться к группе».
-<a class="btn" href="https://groups.google.com/g/kitchen-rush-testers">Открыть группу</a><code>https://groups.google.com/g/kitchen-rush-testers</code></li>
-<li><b>Станьте тестировщиком.</b> Нажмите «Стать тестировщиком» (Become a tester) и дождитесь надписи «Вы тестировщик».
-<a class="btn" href="https://play.google.com/apps/testing/com.driveoil.kitchenrush">Стать тестировщиком</a><code>https://play.google.com/apps/testing/com.driveoil.kitchenrush</code></li>
-<li><b>Установите игру из Play Маркета.</b> Страница откроется только после шага 2 (иногда через несколько минут). Разработчик в Play — «Drive Oil».
-<a class="btn" href="https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush">Установить Kitchen Rush</a><code>https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush</code></li>
-</ol>
-<p>Пожалуйста, не выходите из теста <b>14 дней</b> и иногда заходите в игру — так Google разрешает выпуск игры. Нужен Android 7.1+ (64-бит). Текст в игре пока на русском.</p>
-
-<h2>Если не получается</h2>
-<ul>
-<li><b>«Нет доступа» / только кнопка «Войти»</b> — вы не вошли в Google в этом браузере. Откройте в Chrome и войдите.</li>
-<li><b>Ссылка 2 «не грузит»</b> — откройте её в Chrome, а не в ВК; проверьте, что выбран нужный аккаунт (значок справа вверху).</li>
-<li><b>«Страница не найдена» на шаге 3</b> — сначала выполните шаги 1 и 2 тем же аккаунтом, подождите 5–15 минут и обновите.</li>
-<li>Не помогло — напишите: <a href="mailto:marinakalinina0011@gmail.com">marinakalinina0011@gmail.com</a> (скриншот + модель телефона). Пароли и коды не присылайте.</li>
-</ul>
-
-<hr>
-<h2 lang="en">English</h2>
-<p lang="en">Free Android closed beta. Open the links in <b>Chrome</b> (not inside VK/Telegram/Instagram), signed in with the <b>same Google account as your Play Store</b>: 1) join the group and tap “Join group”, 2) tap “Become a tester”, 3) install from Google Play (works only after step 2, sometimes after a few minutes). Please stay opted in for 14 days. Android 7.1+ (64-bit); in-game text is Russian for now. No purchases, no ads.</p>
-<p><a href="../">Kitchen Rush</a> · <a href="../privacy/">Privacy</a></p>
-</main>
+  <a class="skip-link" href="#guides">Skip to the guide / Перейти к инструкции</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../" aria-label="Kitchen Rush home"><img class="brand-mark" src="./kitchen-rush-logo.png" alt="Kitchen Rush" width="56" height="56" decoding="async"><span>Kitchen Rush</span></a>
+    <nav class="language-switch" aria-label="Choose language / Выбор языка"><a href="?lang=en#start-en" data-language="en" lang="en">English</a><a href="?lang=ru#start-ru" data-language="ru" lang="ru">Русский</a></nav>
+  </header>
+  <main id="guides" class="wrap">
+    <article data-locale="en" lang="en" aria-labelledby="start-en">
+      <section class="hero" aria-label="Welcome">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ANDROID · CLOSED TEST</div>
+        <h1 id="start-en">Your kitchen.<br><span>Your first shift.</span></h1>
+        <p class="hero-copy">Cook an order, serve your guests and leave the kitchen clean. Start small, learn the flow and help shape Kitchen Rush.</p>
+        <div class="hero-actions"><a class="button primary" href="#join-en">Join the Android test <span aria-hidden="true">↗</span></a><a class="button secondary" href="#play-en">Show me how to play</a></div>
+        <p class="fine-print">Free to join. English and Russian in the game. The confirmed public release date will be posted in our communities.</p>
+        <div class="hero-facts"><span>Prepare → serve → wash</span><span>Movement controls</span><span>Your feedback matters</span></div>
+      </section>
+      <section id="join-en" class="section" aria-labelledby="join-title-en">
+        <div class="section-heading"><p class="eyebrow">START HERE</p><h2 id="join-title-en">Three steps. One Google account.</h2><p>Open these links in Chrome or your normal browser. Use the <strong>same Google account as Google Play on your Android phone</strong> at every step.</p></div>
+        <aside class="notice"><strong>Inside Telegram, Instagram or VK?</strong> Open the page menu and choose <strong>Open in browser</strong>. If an access message appears, check the selected Google account before trying again.</aside>
+        <ol class="join-steps">
+          <li><span class="step-number" aria-hidden="true">01</span><h3>Join the tester group</h3><p>Sign in to Google, open the official group and choose <strong>Join group</strong>. Joining the group gives eligibility; it does not install the game.</p><a class="button primary" href="https://groups.google.com/g/kitchen-rush-testers" target="_blank" rel="noopener noreferrer">Open Kitchen Rush group <span aria-hidden="true">↗</span></a></li>
+          <li><span class="step-number" aria-hidden="true">02</span><h3>Opt in to the test</h3><p>Choose <strong>Become a tester</strong>. Wait until the page confirms that you are a tester. Keep using that same Google account.</p><a class="button primary" href="https://play.google.com/apps/testing/com.driveoil.kitchenrush" target="_blank" rel="noopener noreferrer">Become a tester <span aria-hidden="true">↗</span></a></li>
+          <li><span class="step-number" aria-hidden="true">03</span><h3>Install from Google Play</h3><p>Install the version Play actually offers to your account, then open it on your phone. A version mentioned in development updates is not necessarily available in the closed test.</p><a class="button primary" data-krco-play-store href="https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush" target="_blank" rel="noopener noreferrer">Install Kitchen Rush <span aria-hidden="true">↗</span></a></li>
+        </ol>
+        <p class="section-note"><strong>Availability checked 26 October 2026:</strong> the last confirmed Google Play closed-test version is <strong>0.11.12 (62)</strong>. Build 65 is not available on Google Play. Install the version offered to your account; development updates may describe features that are still being tested.</p>
+        <p class="section-note">Android 7.1+ and a 64-bit device. Google Play shows your device’s actual compatibility. Group membership, test opt-in, installation and opening the game are separate steps.</p>
+        <div class="test-note"><span class="note-icon" aria-hidden="true">14</span><p><strong>Already opted in? Please stay in the test for 14 continuous days.</strong> Try real shifts when you can and tell us what feels unclear. Following a social account is optional and does not replace Play opt-in. <a href="https://support.google.com/googleplay/android-developer/answer/14151465?hl=en" target="_blank" rel="noopener noreferrer">Google’s testing guidance</a></p></div>
+      </section>
+      <section id="play-en" class="section play-section" aria-labelledby="play-title-en">
+        <div class="section-heading"><p class="eyebrow">YOUR FIRST SHIFT</p><h2 id="play-title-en">Move close. Stop briefly. Let your chef work.</h2><p>You do not need to tap a station or look for an action button. Move the chef with the stick, approach the right station and release the stick briefly.</p></div>
+        <div class="tip"><strong>New to the kitchen?</strong> For the story, choose <strong>Play → Career → the first unlocked shift</strong>. If your installed beta offers it, the tutorial is under <strong>Settings → Sound &amp; controls → Tutorial</strong>. Include the build number in your report if menus differ.</div>
+        <ol class="play-steps">
+          <li><span aria-hidden="true">1</span><div><h3>Read the order at the top</h3><p>Check which dish the guest wants. Follow the highlighted route for the dish you are making.</p></div></li>
+          <li><span aria-hidden="true">2</span><div><h3>Prepare the ingredients</h3><p>Go to ingredients, the board and the cooking station when needed. Wait for preparation or cooking to finish, then collect the result.</p></div></li>
+          <li><span aria-hidden="true">3</span><div><h3>Plate and serve</h3><p>Approach the plate stack with the correct prepared food and a clean plate available. Then take the dish to its matching guest.</p></div></li>
+          <li><span aria-hidden="true">4</span><div><h3>Finish with the washing-up</h3><p>When guests finish, collect the dirty dishes and take them to the sink. <strong>2/2 orders can still mean washing is left.</strong> Wait for the washing to finish instead of cooking an extra meal for a new guest.</p></div></li>
+        </ol>
+      </section>
+      <section class="section" aria-labelledby="help-title-en">
+        <div class="section-heading"><p class="eyebrow">WHEN SOMETHING FEELS STUCK</p><h2 id="help-title-en">A few answers before your next try.</h2></div>
+        <div class="faq">
+          <details><summary>Google says “not found” or “no access”.</summary><div><p>Check steps 1 and 2 using the same Google account selected in Play. Open the links in your normal browser. After opting in, access may take time to update. Check the selected account before reopening the Play link.</p><p>If it still fails, send the exact message and your phone model. Do not send your email, password or verification codes.</p></div></details>
+          <details><summary>2/2 orders — why is there no third guest?</summary><div><p><strong>You may already have served the full order quota.</strong> Collect dirty dishes from the tables or return station, take them to the sink and wait for washing to finish. Making a third meal will not replace the cleanup.</p><p>Focus on the remaining shift goals. Some career missions also have an extra objective; the order counter alone does not confirm victory.</p></div></details>
+          <details><summary>The plate stack does nothing.</summary><div><p>Check what your chef is holding and whether a clean plate is available. If all plates are dirty, finish the washing-up first. With full hands, you may need to use the return/trash station before collecting dirty dishes; returning food discards it.</p><p>If the prompt still points to an impossible step, send a short clip with the build version, held item and clean/dirty plate counts. Keep your save.</p></div></details>
+          <details><summary>“My restaurant” has zero coins and grey buttons.</summary><div><p>Furniture uses the <strong>restaurant’s online wallet</strong>. Coins in a local career are shown separately. In <strong>My restaurant → Shifts → Play a normal shift</strong>, finish cooking, serving and washing, then wait for the server-confirmed reward.</p><p>To place furniture, first buy it, choose the owned piece, select a free grid position and use <strong>Place</strong>. An empty wallet or no owned piece can leave those actions unavailable. If the shift or reward confirmation is unavailable, report the message and build number; keep your save.</p></div></details>
+          <details><summary>Do I have to sign in or follow a channel?</summary><div><p>The Google account used for the tester group and Google Play access is separate from an in-game account. Online modes need internet; the available in-game sign-in options depend on your installed beta.</p><p>If an in-game sign-in prompt blocks you, report its wording and build number. Keep your existing save; do not reset progress or reinstall to clear the prompt. Enter passwords and codes only on the official sign-in page, never in a tester chat.</p><p>Community follows are voluntary. A Telegram follow or Facebook join is not the Google Play tester opt-in.</p></div></details>
+          <details><summary>Are paid skins or rewarded videos active?</summary><div><p>The current beta has no active real-money checkout or rewarded advertising. Those additions are being prepared separately. We will announce availability when they are ready; this guide does not ask you to pay.</p></div></details>
+          <details><summary>When is the public release?</summary><div><p>We are preparing the game and collecting genuine play reports. The public date will be confirmed in the official communities after the relevant Google Play clearance. A closed-test update is not the public release.</p></div></details>
+        </div>
+      </section>
+      <section id="feedback-en" class="section feedback-section" aria-labelledby="feedback-title-en">
+        <div class="section-heading"><p class="eyebrow">HELP US MAKE IT CLEARER</p><h2 id="feedback-title-en">Show us the moment you got stuck.</h2><p>A short, specific report is more useful than a rating. Copy this template, fill it in and reply in the tester conversation where you received your invitation.</p></div>
+        <label class="template-label" for="report-en">Bug report template</label>
+        <textarea id="report-en" class="report-template" readonly rows="12" spellcheck="false">Version / build (or main-menu screenshot):
+Phone model / Android version:
+Mode / shift:
+What the chef was holding:
+Clean / dirty plates, if relevant:
+Steps before the problem:
+Expected result:
+Actual result / exact message:
+Does it repeat after restarting the game?
+Screenshot or short clip (hide private details):</textarea>
+        <div class="copy-row"><button type="button" class="button primary" data-copy-report="report-en" data-copy-success="Template copied. Fill it in in your tester chat." data-copy-fallback="Template selected. Use your device’s Copy command.">Copy report template</button><p id="copy-status-en" role="status" aria-live="polite" class="copy-status"></p></div>
+        <p class="privacy-note">Please hide emails, notifications, passwords and verification codes in screenshots. This page sends no report and uploads no file. The Telegram channel is for news; the official discussion and other community links are below.</p>
+      </section>
+      <section class="community section" aria-labelledby="community-title-en"><div><p class="eyebrow">KEEP IN TOUCH</p><h2 id="community-title-en">Kitchen Rush, in English and Russian.</h2><p>Updates, confirmed release news and a place for questions and test reports. Join if you would like to follow the game.</p></div><div class="community-links"><a class="button light" href="https://www.facebook.com/groups/2116409505682452/" target="_blank" rel="noopener noreferrer">English community <span aria-hidden="true">↗</span></a><a class="button light" href="https://t.me/kitchenrushgame" target="_blank" rel="noopener noreferrer">Telegram news <span aria-hidden="true">↗</span></a><a class="button light" href="https://t.me/kitchenrushgamechat" target="_blank" rel="noopener noreferrer">Telegram discussion <span aria-hidden="true">↗</span></a><a class="button light" href="https://x.com/bbbbbbalu0420" target="_blank" rel="noopener noreferrer">Kitchen Rush on X <span aria-hidden="true">↗</span></a><a class="button light" href="https://www.facebook.com/profile.php?id=61595733787361" target="_blank" rel="noopener noreferrer">Facebook Page <span aria-hidden="true">↗</span></a></div></section>
+    </article>
+    <article data-locale="ru" lang="ru" aria-labelledby="start-ru">
+      <section class="hero" aria-label="Добро пожаловать">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ANDROID · ЗАКРЫТЫЙ ТЕСТ</div>
+        <h1 id="start-ru">Твоя кухня.<br><span>Твоя первая смена.</span></h1>
+        <p class="hero-copy">Приготовь заказ, накорми гостей и оставь кухню чистой. Начни с простого, освой движение повара и помоги сделать Kitchen Rush лучше.</p>
+        <div class="hero-actions"><a class="button primary" href="#join-ru">Присоединиться к тесту <span aria-hidden="true">↗</span></a><a class="button secondary" href="#play-ru">Покажите, как играть</a></div>
+        <p class="fine-print">Участие бесплатное. В игре есть русский и английский. Подтверждённую дату публичного выхода опубликуем в сообществах.</p>
+        <div class="hero-facts"><span>Приготовь → подай → помой</span><span>Управление движением</span><span>Твой отзыв важен</span></div>
+      </section>
+      <section id="join-ru" class="section" aria-labelledby="join-title-ru">
+        <div class="section-heading"><p class="eyebrow">НАЧНИ ЗДЕСЬ</p><h2 id="join-title-ru">Три шага. Один Google-аккаунт.</h2><p>Открывай ссылки в Chrome или обычном браузере. На каждом шаге выбирай <strong>тот же Google-аккаунт, что в Play Маркете на Android-телефоне</strong>.</p></div>
+        <aside class="notice"><strong>Открыл из Telegram, Instagram или ВК?</strong> В меню страницы выбери <strong>«Открыть в браузере»</strong>. Если появилось сообщение о доступе, сначала проверь выбранный Google-аккаунт.</aside>
+        <ol class="join-steps">
+          <li><span class="step-number" aria-hidden="true">01</span><h3>Вступи в группу теста</h3><p>Войди в Google, открой официальную группу и нажми <strong>«Присоединиться к группе»</strong>. Членство даёт доступ к тесту, но не устанавливает игру.</p><a class="button primary" href="https://groups.google.com/g/kitchen-rush-testers" target="_blank" rel="noopener noreferrer">Открыть группу Kitchen Rush <span aria-hidden="true">↗</span></a></li>
+          <li><span class="step-number" aria-hidden="true">02</span><h3>Стань тестировщиком</h3><p>Нажми <strong>«Стать тестировщиком» / Become a tester</strong>. Дождись подтверждения, что ты участник теста. Используй тот же Google-аккаунт.</p><a class="button primary" href="https://play.google.com/apps/testing/com.driveoil.kitchenrush" target="_blank" rel="noopener noreferrer">Стать тестировщиком <span aria-hidden="true">↗</span></a></li>
+          <li><span class="step-number" aria-hidden="true">03</span><h3>Установи из Play Маркета</h3><p>Установи версию, которую Play действительно предлагает твоему аккаунту, и открой её на телефоне. Сборка из новостей о разработке не обязательно доступна в закрытом тесте.</p><a class="button primary" data-krco-play-store href="https://play.google.com/store/apps/details?id=com.driveoil.kitchenrush" target="_blank" rel="noopener noreferrer">Установить Kitchen Rush <span aria-hidden="true">↗</span></a></li>
+        </ol>
+        <p class="section-note"><strong>Доступность проверена 26 октября 2026:</strong> последняя подтверждённая версия закрытого теста Google Play — <strong>0.11.12 (62)</strong>. Сборка 65 в Google Play недоступна. Устанавливай предложенную аккаунту версию: в новостях о разработке могут упоминаться ещё тестируемые функции.</p>
+        <p class="section-note">Android 7.1+ и 64-битное устройство. Совместимость с конкретным телефоном показывает Google Play. Членство в группе, участие в тесте, установка и первый запуск — разные шаги.</p>
+        <div class="test-note"><span class="note-icon" aria-hidden="true">14</span><p><strong>Уже вступил в тест? Пожалуйста, оставайся участником 14 дней подряд.</strong> По возможности играй настоящие смены и рассказывай, что непонятно. Подписка на соцсети добровольная и не заменяет участие в тесте Play. <a href="https://support.google.com/googleplay/android-developer/answer/14151465?hl=ru" target="_blank" rel="noopener noreferrer">Правила тестирования Google</a></p></div>
+      </section>
+      <section id="play-ru" class="section play-section" aria-labelledby="play-title-ru">
+        <div class="section-heading"><p class="eyebrow">ПЕРВАЯ СМЕНА</p><h2 id="play-title-ru">Подойди. Остановись. Повар сделает сам.</h2><p>Нажимать на станцию или искать кнопку действия не нужно. Двигай повара стиком, подойди к нужной станции и ненадолго отпусти стик.</p></div>
+        <div class="tip"><strong>Первый раз на кухне?</strong> Для сюжета выбери <strong>«Играть» → «Карьера» → первую открытую смену</strong>. Если обучение доступно в установленной бете, оно находится в <strong>«Настройки» → «Звук и управление» → «Обучение»</strong>. Если меню отличается, укажи номер сборки в отчёте.</div>
+        <ol class="play-steps">
+          <li><span aria-hidden="true">1</span><div><h3>Посмотри заказ сверху</h3><p>Проверь, какое блюдо хочет гость. Следуй подсвеченному маршруту для блюда, которое сейчас готовишь.</p></div></li>
+          <li><span aria-hidden="true">2</span><div><h3>Подготовь продукты</h3><p>Подойди к продуктам, доске и, если нужно, к месту готовки. Дождись окончания нарезки или приготовления и забери результат.</p></div></li>
+          <li><span aria-hidden="true">3</span><div><h3>Сервируй и подай</h3><p>Подойди к стопке тарелок с нужной подготовленной едой. Для сервировки нужна чистая тарелка. Затем отнеси блюдо подходящему гостю.</p></div></li>
+          <li><span aria-hidden="true">4</span><div><h3>Заверши мытьём посуды</h3><p>Когда гости доедят, забери грязную посуду и отнеси к мойке. <strong>При 2/2 заказов мытьё ещё может оставаться.</strong> Дождись его окончания вместо приготовления лишней еды для нового гостя.</p></div></li>
+        </ol>
+      </section>
+      <section class="section" aria-labelledby="help-title-ru">
+        <div class="section-heading"><p class="eyebrow">ЕСЛИ ЧТО-ТО НЕ ПОЛУЧАЕТСЯ</p><h2 id="help-title-ru">Несколько ответов перед новой попыткой.</h2></div>
+        <div class="faq">
+          <details><summary>Google пишет «не найдено» или «нет доступа».</summary><div><p>Проверь шаги 1 и 2 под тем же Google-аккаунтом, который выбран в Play. Открывай ссылки в обычном браузере. После вступления в тест доступ может обновиться не сразу. Перед повторным открытием ссылки Play проверь выбранный аккаунт.</p><p>Не помогло — пришли точный текст ошибки и модель телефона. Почту, пароль и коды подтверждения присылать не нужно.</p></div></details>
+          <details><summary>2/2 заказов — почему нет третьего гостя?</summary><div><p><strong>Возможно, все нужные заказы уже поданы.</strong> Собери грязную посуду со столиков или возврата, отнеси в мойку и дождись окончания мытья. Приготовление третьего блюда не заменяет уборку.</p><p>Проверь оставшиеся цели смены. В некоторых заданиях карьеры есть дополнительная цель; один счётчик заказов ещё не подтверждает победу.</p></div></details>
+          <details><summary>У тарелок ничего не происходит.</summary><div><p>Проверь предмет в руках и наличие чистых тарелок. Если вся посуда грязная, сначала закончи мойку. С занятыми руками может понадобиться подойти к возврату/отходам перед сбором грязной посуды; возвращённая еда выбрасывается.</p><p>Если подсказка всё равно ведёт к невыполнимому действию, пришли короткое видео, версию сборки, предмет в руках и число чистых/грязных тарелок. Сохранение не удаляй.</p></div></details>
+          <details><summary>В «Моём ресторане» ноль монет и серые кнопки.</summary><div><p>Мебель покупается за <strong>монеты онлайн-ресторана</strong>. Баланс местной карьеры учитывается отдельно. Открой <strong>«Мой ресторан» → «Смены» → «Играть обычную смену»</strong>: приготовь заказы, подай их, помой посуду и дождись подтверждённой сервером награды.</p><p>Чтобы расставить мебель, сначала купи её, выбери купленный предмет, свободное место на сетке и нажми <strong>«Поставить»</strong>. Без монет или купленного предмета эти действия могут быть недоступны. Если смена или подтверждение награды недоступны, пришли сообщение игры и номер сборки; сохранение не сбрасывай.</p></div></details>
+          <details><summary>Нужно ли входить в аккаунт и подписываться?</summary><div><p>Google-аккаунт для группы тестировщиков и доступа Google Play — не игровой аккаунт. Для сетевых режимов нужен интернет; варианты входа в игру зависят от установленной беты.</p><p>Если окно входа в игре не даёт продолжить, пришли его текст и номер сборки. Сохрани существующий прогресс: не сбрасывай его и не переустанавливай игру ради обхода окна. Пароли и коды вводи только на официальной странице входа, не в чате тестировщиков.</p><p>Подписки на сообщества добровольные. Подписка в Telegram или Facebook не заменяет вступление в тест Google Play.</p></div></details>
+          <details><summary>Платные скины и видео за награду уже работают?</summary><div><p>В текущей бете нет действующих покупок за реальные деньги и рекламы за награду. Эти дополнения готовятся отдельно. Об их доступности сообщим, когда они будут готовы; инструкция не предлагает ничего оплачивать.</p></div></details>
+          <details><summary>Когда публичный выход?</summary><div><p>Мы готовим игру и собираем настоящие отзывы об игровых сменах. Дату публичного выхода подтвердим в официальных сообществах после нужного допуска Google Play. Обновление закрытого теста ещё не означает публичный релиз.</p></div></details>
+        </div>
+      </section>
+      <section id="feedback-ru" class="section feedback-section" aria-labelledby="feedback-title-ru">
+        <div class="section-heading"><p class="eyebrow">ПОМОГИ СДЕЛАТЬ ПОНЯТНЕЕ</p><h2 id="feedback-title-ru">Покажи момент, на котором застрял.</h2><p>Короткий конкретный отчёт полезнее оценки. Скопируй шаблон, заполни и ответь в той переписке с тестировщиками, где получил приглашение.</p></div>
+        <label class="template-label" for="report-ru">Шаблон сообщения о баге</label>
+        <textarea id="report-ru" class="report-template" readonly rows="12" spellcheck="false">Версия / сборка (или скриншот главного меню):
+Модель телефона / версия Android:
+Режим / смена:
+Что повар держал в руках:
+Чистые / грязные тарелки, если важно:
+Действия перед проблемой:
+Что ожидал:
+Что произошло / точный текст сообщения:
+Повторяется ли после перезапуска игры?
+Скриншот или короткое видео (скрой личные данные):</textarea>
+        <div class="copy-row"><button type="button" class="button primary" data-copy-report="report-ru" data-copy-success="Шаблон скопирован. Заполни его в переписке с тестировщиками." data-copy-fallback="Шаблон выделен. Выбери команду «Копировать» на устройстве.">Скопировать шаблон</button><p id="copy-status-ru" role="status" aria-live="polite" class="copy-status"></p></div>
+        <p class="privacy-note">Скрывай на скриншотах почту, уведомления, пароли и коды подтверждения. Эта страница не отправляет отчёт и не загружает файлы. Telegram-канал публикует новости; официальное обсуждение и остальные ссылки есть ниже.</p>
+      </section>
+      <section class="community section" aria-labelledby="community-title-ru"><div><p class="eyebrow">ОСТАВАЙСЯ НА СВЯЗИ</p><h2 id="community-title-ru">Kitchen Rush — на русском и английском.</h2><p>Обновления, подтверждённые новости о выходе, вопросы и отчёты об игре. Подписывайся, если хочешь следить за игрой.</p></div><div class="community-links"><a class="button light" href="https://www.facebook.com/groups/1142296261535385/" target="_blank" rel="noopener noreferrer">Русское сообщество <span aria-hidden="true">↗</span></a><a class="button light" href="https://t.me/kitchenrushgame" target="_blank" rel="noopener noreferrer">Новости в Telegram <span aria-hidden="true">↗</span></a><a class="button light" href="https://t.me/kitchenrushgamechat" target="_blank" rel="noopener noreferrer">Обсуждение в Telegram <span aria-hidden="true">↗</span></a><a class="button light" href="https://x.com/bbbbbbalu0420" target="_blank" rel="noopener noreferrer">Kitchen Rush в X <span aria-hidden="true">↗</span></a><a class="button light" href="https://www.facebook.com/profile.php?id=61595733787361" target="_blank" rel="noopener noreferrer">Страница Facebook <span aria-hidden="true">↗</span></a></div></section>
+    </article>
+  </main>
+  <footer class="site-footer wrap"><span>Kitchen Rush · Mikhail Kalinin</span><a href="../privacy/">Privacy / Конфиденциальность</a><a href="../">Kitchen Rush</a></footer>
 </body>
 </html>
